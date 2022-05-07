@@ -128,6 +128,12 @@ img {
   max-width: 100%;
 }
 
+section img {
+  margin: 4px 0 10px;
+  box-shadow: 0 2px 8px 1px rgb(0 0 0 / 20%);
+  background: rgb(0 0 0 / 3%);
+}
+
 p {
   margin-top: 1rem;
 }

@@ -12,7 +12,7 @@ type Issue = any;
 const Home: NextPage<Props> = ({ issues }) => {
   return (
     <section>
-      <ol>
+      <ol className="flex flex-col gap-12">
         {issues.map((issue) => (
           <li key={issue.number}>
             <Time dateTime={issue.created_at} />
@@ -29,7 +29,7 @@ export default Home;
 export async function getStaticProps() {
   return {
     props: {
-      issues: listIssues(),
+      issues: await listIssues(),
     },
   };
 }
